@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  box-sizing: border-box;
+}
+.items, .feederHouse, .feederAcrillic, .feederPhoto, .feederLodgy, .feederTeremok, .feederHanging, .giftSet{
+    padding: 0px 15px;
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+.header_burger {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.header_logoIcon {
+  width: 70%;
+  max-width: 280px;
+  height: 100%;
+}
+.about{
+    width: 100%;
+}
+.about_image{
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: left ;  
+}
+.about_wrapper{
+   display: flex;
+}
+.about_title{
+    font-size: 23px;
+    font-family: 'Literata', serif;
+    font-weight: 600;
+    bottom: 40px;
+    text-align: center;
+    bottom: 50px;
+    margin: 15px 0px;
+}
+.about_titleWrapeper{
+    position: relative;
+    min-height: 120px;
+}
+.background_bird{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+.title_yellow-grey_bird{
+    bottom: 2%;
+    left: 4%;
+}
+.title_yellow_bird2{
+    bottom: 20%;
+    right: 3%;
+}
+.items{
+    position: relative;
+}
+.items_kinds{
+    font-size: 34px;
+    font-weight: normal;
+    border-bottom: 2px solid #000000;
+    width: 280px;
+    text-align: center;
+    margin: 0px auto;
+    font-family: 'Literata', serif;
+}
+.items_kinds::before{
+content: '';
+position: absolute;
+opacity: 1;
+z-index: -1;
+margin: 0px auto;
+top: 4px;
+width: 280px;
+height: 28px;
+background-color:  #ffed4d;
+}
+.text{
+    font-size: 14px;
+    font-family: 'Literata', serif;
+    text-indent: 10px;
+    text-align: center;
+    
+}
+.items_text:last-of-type{
+    margin-top: 15px; 
+}
+.main_yellow_bird{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7; 
+    top: 40%;
+    left: -2%;
+}
+.feederHouse{
+    margin-top: 20px;
+    position: relative;
+}
+.feederHouse_title, .feederPhoto_title, .feederHanging_title{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    text-align: center;
+    width: 270px;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+.feederAcrillic_title, .feederPhoto_title, .feederLodgy_title, .feederTeremok_title, .giftSet_title{
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    display: inline-block;
+    width: auto;
+    position: relative;
+}
+.feederAcrillic_title{
+    width: 185px;
+}
+.feederHanging_title{
+    width: 230px;
+    display: block;
+}
+.feederHouse_title::before, .feederPhoto_title::before, .feederLodgy_title::before, .feederTeremok_title::before{
+content: '';
+position: absolute;
+opacity: 1;
+z-index: -1;
+margin: 0px auto;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 13px;
+background-color:  #ffed4d;
+}
+.feederHouse_image, .feederPhoto_image{
+    width: 100%;   
+}
+.feederPhoto_image{
+    margin: 15px 0px;
+}
+.feederHouse_text, .feederAcrillic_text{
+    margin-top: 15px;
+}
+.feederHouse_yellow_bird{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    transform: rotatey(180deg);
+    top: 70%;
+    right: 3%;
+
+}
+.feederAcrillic_title::before{
+    content: '';
+position: absolute;
+opacity: 1;
+z-index: -1;
+margin: 0px auto;
+top: 15px;
+width: 100%;
+height: 13px;
+background-color:  #ffed4d;
+}
+.feederAcrillic_yellow-grey_bird{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    top: 10%;
+    left: 15px;
+}
+
+.feederAcrillic_yellow_bird2{
+    width: 170px;
+    height: 170px;
+    transform: rotatey(180deg);
+    top: 35%;
+    right: 0px;
+}
+.feederPhoto_aboutWrapper{
+    text-align-last: left;
+}
+.feederPhoto_about{
+    font-size: 15px;
+    font-weight: bold; 
+    letter-spacing: -1px;
+    text-align: center;
+}
+.feederPhoto_equipmTitle {
+    font-size: 15px;
+    text-align: left;
+    display: inline-block;
+}
+.feederPhoto_equipment_item{
+    font-size: 14px;
+    list-style: square;
+    margin-left: 15px;
+}
+.feederPhoto_equipment{
+    margin-bottom: 10px;
+}
+.feeder_about{
+    font-size: 14px;
+}
+.feederPhoto_yellow-grey_bird{
+    width: 140px;
+    height: 140px;
+   position: absolute;
+   bottom: 0%;
+   right: 50%;
+    z-index: -1;
+}
+.feederPhoto_grey_bird{
+   position: absolute;
+    top: 285px;
+    right: 75px;
+    z-index: -2;
+}
+.feederHanging_title::before{
+    content: '';
+position: absolute;
+opacity: 1;
+z-index: -1;
+margin: 0px auto;
+top: 4px;
+left: 0px;
+width: 100%;
+height: 15px;
+background-color:  #ffed4d;
+}
+.feederHanging_yellow_bird{
+    left: 0%;
+    top: 10%;
+}
+.feederHanging_sliderWrapper{
+    width: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto 0px;
+}
+.feederHanging_sliderWrapper_inner{
+    width: 100%;
+    height: 90vw;
+    max-width: 800px;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.feederHnging_slidePhoto{
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    right: 0px; 
+}
+.slide{
+ width: 100vw;
+ max-width: 100%;
+position: absolute;
+left: 0px;
+transition: ease-in-out 1s;
+height: 100%;
+opacity: 0;
+transition: 1.5s;
+}
+.active, .giftSetActive{
+    transition: 1.5s;
+    z-index: 10;
+    opacity: 1;
+}
+.slider_buttons, .giftSet_slider_buttons{
+    font-size:38px;
+    width: 50px;
+    height: 50px;
+   cursor: pointer;
+    background: none;
+    border: none;
+    color: #000000;
+    bottom: -10px;
+    transition: 0.2s;
+    outline: 0;
+}
+.slider_buttons__hover:hover{
+    transition: 0.2s;
+    font-size: 42px;
+    color: red; 
+}
+
+.controls_wrapper{
+width: 250px;
+height: 50px;
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.dots_wrapper{
+    height: 50px;
+    display: flex;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+.slider-dots_item{   
+    transition: 1s;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    flex-basis: 1;
+    margin:0px 2px;
+    cursor: pointer;
+}
+
+.activeDot{
+    width: 23px;
+    height: 23px;
+    transition: 0.5s;
+}
+.halfActiveDot{
+    transition: 0.5s;
+    width: 18px;
+    height: 18px;
+}
+.dot1{
+    background-color: #ace7e5;
+}
+.dot2{
+    background-color:#988c9b;
+}
+.dot3{
+    background-color:#74ee42;
+}
+.dot4{
+    background-color:#cac4be;
+}
+.dot5{
+    background-color:#511607;
+}
+.dot6{
+    background-color:#fb3d90;
+}
+.dot7{
+    background-color:#ecd725;
+}
+.giftSet_title{
+    margin-top: 15px;
+}
+.giftSet_title::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 170px;
+    height: 30px;
+    left: -20px;
+    background-color:#ffed4d;
+}
+.giftSet_title{
+    font-weight: bold;
+}
+.giftSet_title::after{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    width: 150px;
+    height: 30px;
+    left: 50px;
+    bottom: 3px;
+    background-color:#b8b5b9;
+}
+.giftSet_sliderWrapper{
+    width: 100%;
+    margin-top: 15px;
+    height: 90vw;
+    overflow: hidden;
+    position: relative;
+}
+.giftSet_sliderItem{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    transition: 1.5s;
+    opacity: 0;
+}
+.giftSetActive{
+    transition: 1.5s;
+    z-index: 10;
+    opacity: 1;
+}
+.giftSet_controls_wrapper{
+    bottom: 0px;
+}
+/*
+@media screen and (orientation:landscape){
+    .about_title{
+        font-size: 32px;
+    }
+    .items_kinds{
+        font-size: 37px;
+        font-weight: normal;
+        
+        width: 305px;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .items_kinds::before{
+        width: 305px;
+        height: 25px;
+        top: 8px;
+    }
+    .main_yellow_bird{
+        top:90px;
+        left: 30px;
+    }
+  
+    .title_yellow_bird2{
+        top:-20px;
+        right: 50px;
+    }
+    .title_yellow_bird{
+        top:35px;
+        left: 10px;
+    }
+    .title_grey_bird{
+        left: 17px;
+        top: 33px;
+        z-index: -2;
+    }
+    .feederHouse_title, .feederPhoto_title, .feederAcrillic_title{
+        font-size: 30px;
+      width: auto;
+    }
+    .feederPhoto_title::before{
+        height: 20px;
+    }
+    .feederAcrillic_title{
+        width: 390px;
+    }
+    .feederHouse_title::before{
+       
+        height: 20px;
+    }
+    .feederAcrillic_title::before{
+    
+        top: 20px;
+        height: 20px;
+    }
+    .feederHouse_yellow_bird{
+        right: 54px;
+    }
+    .feederAcrillic_yellow_bird{
+        top: 50px;
+    }
+    .feederAcrillic_grey_bird{
+        top: 62px;
+    }
+    .feederAcrillic_yellow_bird2{
+    top: 180px
+    }
+    }
