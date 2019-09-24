@@ -132,7 +132,7 @@ z-index: 100;
     font-weight: normal;
     margin: 5px 0px;
 }
-.feeder_out_wrapper{
+.feeder_out_wrapper, .feed{
     margin-top: 30px;
     width: 100%;
     
@@ -223,4 +223,45 @@ color: #ffffff;
     width: 85px;
     left: 0px;
     bottom: 165px;
+}
+.feed_title{
+    font-size: 21px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Myriad Pro', sans-serif;
+    color:#ffcc00;
+}
+.out_wrapper{
+    width: inherit;
+    background-color: #ffcc00;
+}
+.feed_inner_title{
+    font-size: 21px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Myriad Pro', sans-serif;
+    line-height: 40px;
+    
+}
+.feed{
+    margin-top: 10px;
+}
+.feed_image_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.feed_image_small{
+    margin: 15px 0px;
+}
+.feed_about{
+    display: block;
+    text-indent: 10px;
+    font-size: 13px;
+    line-height: 21px;
+    margin: 10px 5px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: normal;
 }
