@@ -272,9 +272,8 @@ color: #ffffff;
     background-position: 20% 50%;
     height: 400px;
 }
-.giftSet_shadow{
-    width: inherit;
-    height: 310px;
-    background-color: #000000;
-    opacity: 0.4;
+.giftSet_sloder_wrapper{
+    width: 100%;
+    height: 260px;
+    background-color: yellow;
 }
