@@ -3,3 +3,13 @@
     src: url(./calibri.ttf);
     font-weight: normal;
 }
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url(./MyriadPro-Regular.ttf);
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url(./MyriadPro-Bold.ttf);
+    font-weight: bold;
+}

@@ -82,7 +82,7 @@ align-items: center;
 .main_text{
 font-size: 17px;
 font-weight: bold;
-font-family: 'Myriad Pro';
+font-family: 'Myriad Pro', sans-serif;
 color: #ffffff;
 z-index: 100;
 
@@ -222,5 +222,5 @@ color: #ffffff;
     position: absolute;
     width: 85px;
     left: 0px;
-    bottom: 20px;
+    bottom: 165px;
 }
