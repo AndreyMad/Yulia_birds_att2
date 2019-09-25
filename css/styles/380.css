@@ -132,7 +132,7 @@ z-index: 100;
     font-weight: normal;
     margin: 5px 0px;
 }
-.feeder_out_wrapper, .feed, .giftSet{
+.feeder_out_wrapper, .feed, .giftSet, .photogallery{
     margin-top: 30px;
     width: 100%;
     
@@ -183,7 +183,7 @@ line-height: 44px;
 .feeder_about_text, .feeder_sizes_text{
 color: #ffffff;
 }
-.feeder_details{
+.feeder_details, .buy_button{
     width: 175px;
     height: 38px;
     border-radius: 10px;
@@ -224,7 +224,7 @@ color: #ffffff;
     left: 0px;
     bottom: 165px;
 }
-.feed_title, .giftset_title{
+.feed_title, .giftset_title, .photogallery_title{
     font-size: 21px;
     line-height: 40px;
     text-transform: uppercase;
@@ -271,9 +271,94 @@ color: #ffffff;
     background-image: url(../../img/giftset_background.jpg);
     background-position: 20% 50%;
     height: 400px;
+    padding: 1px 0px;
 }
-.giftSet_sloder_wrapper{
+.giftSet_slider_wrapper{
     width: 100%;
     height: 260px;
     background-color: yellow;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.4);
+    position: relative;
+}
+.giftSet_slider_innerWrapper{
+    width: inherit;
+    height: 260px;
+    position: relative;
+}
+.svg_arrow{
+    width: 50px;
+    fill: #ffcc00;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 3px 11px 18px -5px rgba(0,0,0,0.75);
+}
+.svg_rigthArrow{
+    top: 60%;
+    right: 15px;
+}
+.svg_leftArrow{
+    top: 60%;
+    left: 15px;
+}
+.svg_arrow:hover{
+    transition: 0.3s;
+    width: 55px;
+    top: 59%;
+ 
+}
+.giftSet_slide{
+    overflow: visible;
+    position: absolute;
+    left: 0;
+    transition:1s;
+    width: 100%;
+    height: 100%;
+}
+.giftSet_price{
+    margin: 30px auto 8px;
+    width: 90px;
+    display: block;
+    font-size: 25px;
+    color: #ff0000;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: bold;
+}
+.buy_button{
+    margin: 0px auto;
+}
+.buy_button_link{
+    font-size: 21px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: bold;
+}
+.photogallery_wrapper{
+    width: inherit;
+    height: 375px;
+    background-image: url(../../img/fotogallery_background.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.photogallery_arrow{
+    width: 50px;
+    fill: #ffcc00;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 3px 11px 18px -5px rgba(0,0,0,0.75);
+}
+.photogallery_rigthArrow{
+bottom: 30px;
+right: 60px;
+transform: rotateZ(-35deg)
+}
+.photogallery_leftArrow{
+    bottom: 30px;
+    left: 60px;
+    transform: rotateZ(35deg)
 }
