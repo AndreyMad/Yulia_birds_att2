@@ -198,6 +198,9 @@ color: #ffffff;
     text-align: center;
     display: block;
     margin: 30px auto;
+
+
+}}
 }
 .feeder_photo_bird{
     position: absolute;
@@ -285,6 +288,7 @@ color: #ffffff;
     width: inherit;
     height: 260px;
     position: relative;
+    overflow: hidden;
 }
 .svg_arrow{
     width: 50px;
@@ -310,10 +314,10 @@ color: #ffffff;
  
 }
 .giftSet_slide{
-    overflow: visible;
+    overflow: hidden;
     position: absolute;
     left: 0;
-    transition:1s;
+    transition: 1s ease-in-out;
     width: 100%;
     height: 100%;
 }
@@ -336,6 +340,28 @@ color: #ffffff;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: bold;
 }
+
+
+.go_right{
+    transition: 1s ease-in-out;
+    left: 100%;
+}
+.go_left{
+    transition: 1s ease-in-out;
+
+    left: -100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 .photogallery_wrapper{
     width: inherit;
     height: 375px;
