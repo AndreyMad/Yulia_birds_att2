@@ -33,9 +33,9 @@
     text-transform: uppercase;
 }
 .header_language{
-    width: 55px;
+    width: 45px;
     height: 20px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +71,7 @@ align-items: center;
 }
 .main_shadow{
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-color: #000000;
    opacity: 0.4;
@@ -200,7 +200,6 @@ color: #ffffff;
     margin: 30px auto;
 
 
-}}
 }
 .feeder_photo_bird{
     position: absolute;
@@ -255,6 +254,9 @@ color: #ffffff;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.feed_image_big{
+    width: 100%;
 }
 .feed_image_small{
     margin: 15px 0px;
