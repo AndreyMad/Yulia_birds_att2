@@ -23,16 +23,16 @@
   <body>
  <header class="header">
    <ul class="header_nav">
-     <li class="header_nav_item"><a href="" class="header_nav_link">Главная</a> </li>
-     <li class="header_nav_item"><a href="" class="header_nav_link">Виды кормушек</a></li>
-     <li class="header_nav_item"><a href="" class="header_nav_link">Подарочный набор</a> </li>
+     <li class="header_nav_item"><a href="#main" class="header_nav_link">Главная</a> </li>
+     <li class="header_nav_item"><a href="#feeder_types" class="header_nav_link">Виды кормушек</a></li>
+     <li class="header_nav_item"><a href="#giftSet" class="header_nav_link">Подарочный набор</a> </li>
    </ul>
    <ul class="header_language">
      <li class="header_language_item">Ru</li>
      <li class="header_language_item">Ua</li>
    </ul>
  </header>
- <section class="main">
+ <section class="main" id="main">
    <div class="main_wrapper">
      <img class="main_logo" src="./img/logo.png" alt="House_of_birds logo" class="main_logo">
     <div class="main_inner_wrapper">
@@ -42,7 +42,7 @@
     </div>
     </div>
  </section>
- <section class="feeder_types">
+ <section class="feeder_types" id="feeder_types">
    <h2 class="feeder_types_title">Виды кормушек</h2>
    <p class="feeder_types_text ">Представьте себе кормушку для птиц! Представили, запомнили? :) Как правило, все представляют деревянный лоточек и сверху крыша. Кто живет в частном доме, им повезло: они могут повесить ее в саду. В то же время жители многоэтажных домов даже и не задумывались, что у них может быть своя кормушка для птиц.</p>
    <br>
@@ -157,7 +157,7 @@
     </div>
     <span class="feed_about">Чем же кормить птиц? Даже в голодный зимний период каждый вид пернатых предпочитает определенный корм. Мы приготовили уникальную смесь "House_for_birds" из экологически чистых семян, благодаря сбалансированному содержанию жиров, белков и клетчатки подходит для большинства зерноядных птиц Украины. В состав корма входят: семена подсолнечника, просо, лен.</span>
   </section>
-  <section class="giftSet">
+  <section class="giftSet" id="giftSet">
     <h2 class="giftset_title">Подарочный набор</h2>
     <div class="giftSet_outWrapper">
       <div class="giftSet_slider_wrapper">
@@ -198,9 +198,44 @@
     <h2 class="prices_title">Наши цены</h2>
     <img src="./img/prices.jpg" alt="" class="prices_table">
   </section>
-  <section class="orderForm">
-    
+  <section class="orderSection">
+   <ol class="orderSection_list">
+     <li class="orderSection_list_item">Для обратной связи укажите Ваше Имя и контактный номер телефона</li>
+     <li class="orderSection_list_item">Для полного заказа в коментариях укажите:
+       <ul class="orderSection_subList">
+         <li class="orderSection_subList_item">Заказываемый товари количество;</li>
+         <li class="orderSection_subList_item">Способ оплаты;</li>
+         <li class="orderSection_subList_item">Курьерская служба(Новая почт или укрпочта);</li>
+         <li class="orderSection_subList_item">Реквизиты доставки</li>
+       </ul>
+     </li>
+   </ol>
+   <form action="" class="orderForm">
+   <label for="#phone_number" class="form_label">Номер телефона</label>
+   <input type="text" name="input_phone_number" id="phone_number" class="input_text">
+   <label for="#name" class="form_label">Ваше имя</label>
+   <input type="text" name="input_name" id="name" class="input_text">
+   <label for="#comment" class="form_label">Комментарий</label>
+   <textarea type="text" name="input_comment" id="comment" class="input_textarea"></textarea>
+  
+   <input type="submit" value="Купить" class="submit_button">
+  </form>
   </section>
+  <footer class="footer">
+    <div class="footer_shadow"></div>
+    <img src="./img/footer_bird.png" alt="" class="footer_bird">
+    <img src="./img/logo.png" alt="House_of_birds logo" class="footer_logo">
+    
+  <div class="footer_contact_wrapper">
+    <div class="footer_logo_wrapper">
+      <a class="footer_link" href="https://www.pinterest.com/infohouseforbirds/" target="_blank"><img src="./img/pi_icon.png" alt="" class="footer_logo_icon"></a>
+      <a class="footer_link" href="" target="_blank"><img src="./img/fb_icon.png" class="footer_logo_icon" alt=""></a>
+      <a class="footer_link" href="https://www.instagram.com/house_for_birds/" target="_blank"><img src="./img/insta_icon.png" class="footer_logo_icon" alt=""></a>
+    </div>
+    <a href="tel:+380688559225" class="footer_contacts">+380688559225</a>
+    <a href="mailto:info.house.for.birds@gmail.com" class="footer_contacts">info.house.for.birds@gmail.com</a>
+  </div>
+  </footer>
   <script src="./js/slider.js"></script>
   </body>
 </html>
