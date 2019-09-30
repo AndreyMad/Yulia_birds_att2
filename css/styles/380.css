@@ -34,6 +34,10 @@
     color: #ffffff;
     text-transform: uppercase;
 }
+.header_nav_link:hover{
+    color: #000000;
+    text-decoration: underline;
+}
 .header_language{
     width: 45px;
     height: 20px;
