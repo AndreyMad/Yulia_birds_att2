@@ -34,6 +34,10 @@
     color: #ffffff;
     text-transform: uppercase;
 }
+.header_nav_link:hover{
+    color: #000000;
+    text-decoration: underline;
+}
 .header_language{
     width: 45px;
     height: 20px;
@@ -294,7 +298,7 @@ color: #ffffff;
 .giftSet_slider_wrapper{
     width: 100%;
     height: 260px;
-    background-color: yellow;
+  
     margin: 20px 0px;
     box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.4);
     position: relative;
@@ -307,7 +311,7 @@ color: #ffffff;
 }
 .svg_arrow{
     width: 50px;
-    opacity: 0;
+   
     fill: #ffcc00;
     position: absolute;
     background-color: #fff;
@@ -315,11 +319,12 @@ color: #ffffff;
     border-radius: 50%;
     box-shadow: 3px 11px 18px -5px rgba(0,0,0,0.75);
 }
-.giftSet_slider_wrapper:hover> .svg_arrow{
-    opacity: 1;
-    transition: 0.4s ease-in-out ;
-    
+.inActive_button{
+    transition: 0.3s;
+    opacity: 0.4;
 }
+
+
 .svg_rigthArrow{
     top: 60%;
     right: 15px;
@@ -328,20 +333,21 @@ color: #ffffff;
     top: 60%;
     left: 15px;
 }
-.svg_arrow:hover{
+.active_button:hover{
     transition: 0.2s;
     width: 60px;
-    top: 59%;
+    top: 57%;
  
 }
 .giftSet_slide{
     overflow: hidden;
     position: absolute;
     left: 0;
-    transition: 1s ease-in-out;
+    transition: 0.3s ease-in-out;
     width: 100%;
     height: 100%;
 }
+
 .giftSet_price{
     margin: 30px auto 8px;
     width: 90px;
@@ -364,11 +370,11 @@ color: #ffffff;
 
 
 .go_right{
-    transition: 1s ease-in-out;
+    transition: 0.3s ease-in-out;
     left: 100%;
 }
 .go_left{
-    transition: 1s ease-in-out;
+    transition: 0.3s ease-in-out;
 
     left: -100%;
 }
