@@ -311,7 +311,7 @@ color: #ffffff;
 }
 .svg_arrow{
     width: 50px;
-    opacity: 0;
+   
     fill: #ffcc00;
     position: absolute;
     background-color: #fff;
@@ -319,11 +319,7 @@ color: #ffffff;
     border-radius: 50%;
     box-shadow: 3px 11px 18px -5px rgba(0,0,0,0.75);
 }
-.giftSet_slider_wrapper:hover> .svg_arrow{
-    opacity: 1;
-    transition: 0.4s ease-in-out ;
-    
-}
+
 .svg_rigthArrow{
     top: 60%;
     right: 15px;
