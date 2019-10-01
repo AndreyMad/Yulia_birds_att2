@@ -109,10 +109,11 @@ margin-left: 130px;
     position: absolute;
     right: 0px;
     bottom: 15px;
-    padding: 5px 5px;
+    padding: 35px 5px 0px;
 }
-.inner_wrapper1{
-    margin-top: 35px;
+.feeder_details{
+    margin-bottom: 15px;
+    margin-top: 50px;
 }
 .yellow_house_bird{
     width: 228px;
@@ -130,5 +131,76 @@ margin-left: 130px;
    display: block;
    margin-right: 0px;
 }
-
+.feeder_photo_bird>img,.yellow_house_bird>img, .feeder_lodgy_bird>img, .feeder_teremok_bird>img, .feeder_flamingo_bird>img{
+    width: 100%;
+}
+.feeder_photo_bird{
+    right: -350px;
+    width: 100px;
+    top: -75px;
+}
+.feeder_lodgy_bird{
+    left: -375px;
+    width: 140px;
+    top: -75px;
+}
+.feeder_teremok_bird{
+    right: -372px;
+    width: 140px;
+    top: -57px;
+}
+.feeder_flamingo_bird{
+    left: -368px;
+    width: 140px;
+    top: -60px;
+}
+.feed_image_wrapper{
+    max-width: 760px;
+    display: grid;
+    margin: 0px auto;
+    grid-template-columns: repeat(4, 190px);
+    grid-template-rows: 195px 195px;
+    margin-top:10px;
+}
+.feed_image_big{
+   grid-column-start: 1;
+   grid-column-end:  4;
+    height: 385px;
+}
+.feed_image_small{
+    align-self: center;
+    justify-self: center;
+}
+.feed_image_small:nth-of-type(2){
+    height: 185px;
+   grid-column-start: 4;
+   grid-column-end:  5;
+   grid-row-start: 1;
+   grid-row-end: 2;
+    
+}
+.feed_image_small:last-of-type{
+    height: 185px;
+    grid-column-start: 4;
+    grid-column-end:  5;
+    grid-row-start: 2;
+   grid-row-end: 3;
+}
+.feed{
+    max-width: 960px;
+    width: 100%;
+}
+.feed>.out_wrapper{
+    width: 100%;
+    max-width: 960px;
+    height: 410px;
+    margin-left: 50%;
+    transform: translateX(-50%)
+}
+.feed_about{
+    margin: 40px auto 0px;
+    font-size: 25px;
+    line-height: 33px;
+    max-width: 760px;
+}
 }
