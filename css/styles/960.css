@@ -201,6 +201,59 @@ margin-left: 130px;
     margin: 40px auto 0px;
     font-size: 25px;
     line-height: 33px;
-    max-width: 760px;
+    max-width: 740px;
+}
+.giftSet{
+    width: 100%;
+    max-width: 960px;
+    height: 505px;
+
+}
+.giftSet_slider_wrapper{
+    height: 300px;
+    box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.4);
+}
+.giftSet_outWrapper{
+    background-size: 100%;
+    height: 465px;
+    background-image: url(../../img/giftset_background_tablet.png);
+    background-repeat: no-repeat;
+}
+.giftSet_slider_innerWrapper{
+    max-width: 520px;
+    height: 100%;
+    margin: 35px auto;
+    box-shadow:  -250px 0px 0px 0px rgba(0,0,0,0.4), 250px 0px 0px 0px rgba(0,0,0,0.4);
+}
+.svg_arrow{
+    width: 80px;
+    top:    40%;
+}
+.active_button:hover{
+    width: 95px;
+    top: 36%;
+}
+.svg_leftArrow{
+
+    left: 25px;
+}
+.svg_rightArrow{
+
+    right: 25px;
+}
+.giftSet_price{
+    font-size: 33px;
+    width: 115px;
+}
+.buy_button{
+    width: 210px;
+    height: 42px;
+}
+.giftSet_yellow_bird{
+    position: absolute;
+    display: block;
+    width: 164px;
+    bottom: -30px;
+    left: 55px;
 }
 }

@@ -399,13 +399,13 @@ color: #ffffff;
     box-shadow: 3px 11px 18px -5px rgba(0,0,0,0.75);
 }
 .photogallery_rigthArrow{
-bottom: 30px;
-right: 60px;
+bottom: 0px;
+right: 0px;
 transform: rotateZ(-35deg)
 }
 .photogallery_leftArrow{
-    bottom: 30px;
-    left: 60px;
+    bottom: 0px;
+    left: 0px;
     transform: rotateZ(35deg)
 }
 .photogallery_inner_wrapper{
@@ -511,6 +511,12 @@ transform: rotateZ(-35deg)
     right: 0px;
     opacity: 0.8;
     width: 130px;
+}
+.photogallery_buttons_wrapper{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    margin: 0px auto;
 }
 .prices_table{
     width: 100%;
@@ -646,4 +652,7 @@ list-style: disc;
 }
 .footer_logo_icon{
     width: inherit;
+}
+.giftSet_yellow_bird{
+    display: none;
 }
