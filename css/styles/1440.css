@@ -1,0 +1,358 @@
+@media (min-width: 1140px){
+    .feeder_out_wrapper, .feed, .giftSet, .photogallery, .prices, .orderSection, .feeder_types,.header{
+        width: 100%;
+        max-width: 1140px;
+      
+    }
+    .feeder_out_wrapper{
+        margin-top: 100px;
+    }
+    .header{
+        height:100px;
+        padding-left: 240px;
+        width: 1050px;
+        z-index: 1;
+    }
+    .header_language_item {
+        font-size: 33px;
+    }
+    .header_nav_link{
+        font-size: 25px;
+    }
+    .header_nav{
+        width:620px;
+    }
+    .header_language{
+        width: 115px;
+    }
+    .main{
+        width: 100%;
+        height: 700px;
+        max-width:1440px;
+        position: relative;
+        overflow: visible;
+        background-image: url(../../img/main_background_1440.jpg);
+    }
+    .main_wrapper{
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    max-width:1140px;
+    }
+    .main_logo{
+        width: 240px;
+
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+    .main_inner_wrapper{
+        width: 920px;
+        height: 400px;
+        left: -15px;
+        top:155px;
+    }
+    .main_inner_wrapper::before{
+        content: '';
+        width: 30px;
+        height: 165px;
+        right: 42px;
+        top: -20px;
+    }
+    .main_inner_wrapper::after{
+        width: 30px;
+        height: 165px;
+        left: 145px;
+        bottom: -25px;
+    }
+    .main_text{
+    font-size: 38px;
+    width: 610px;
+    margin-left: 200px;
+    }
+    .bird{
+        width: 230px;
+        left: 120px;
+    }
+    .feeder_types_title, .orderSection_title, .feed_title, .giftset_title, .photogallery_title, .prices_title{
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .feeder_types_text, .feed_inner_title{
+        font-size: 33px;
+    }
+    .feeder_image{
+        width: 635px;
+        height: 465px;
+    }
+    .feeder_header{
+        position: absolute;
+        width: 670px;
+        height: 70px;
+        top: 20px;
+        right: 30px;
+        z-index: 1;
+    }
+    .feeder_header_title {
+        font-size: 37px;
+        line-height: 70px;
+    }
+    .feeder_inner_wrapper{
+        width: 506px;
+        height: 380px;
+        position: absolute;
+        right: 0px;
+        bottom: 15px;
+        padding: 70px 5px 0px;
+    }
+    .feeder_about, .feeder_sizes,.feeder_about_text, .feeder_sizes_text{
+    font-size: 29px;
+    }
+    .inner_wrapper1{
+        margin-top: 35px;
+    }
+    .feeder_details{
+        width: 290px;
+        height: 50px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        font-size: 29px;
+
+    }
+    .feeder_details:active{
+        box-shadow: 5px 6px 4px 0px rgba(0,0,0,0.3);
+        transform: translate(1.5px, 1.5px);
+        transition: 200ms;
+    }
+
+
+
+
+    .yellow_house_bird{
+        width: 355px;
+        left:-495px;
+        top:-55px;
+    }
+
+    .feeder_photo_bird{
+        right: -470px;
+        width: 180px;
+       
+    }
+    .feeder_lodgy_bird{
+        left: -445px;
+        width: 215px;
+        top: -60px;
+    }
+    .feeder_teremok_bird{
+        right: -455px;
+        width: 224px;
+        top: -100px;
+    }
+    .feeder_flamingo_bird{
+        left: -480px;
+        width: 250px;
+        top: -120px;
+    }
+    .feed_image_wrapper{
+        max-width:1140px;
+        display: grid;
+        margin: 0px auto;
+        grid-template-columns: repeat(4, 285px);
+        grid-template-rows: repeat(2, 280px);
+        margin-top:10px;
+    }
+    .feed_image_big{
+       grid-column-start: 1;
+       grid-column-end:  4;
+        height: 560px;
+    }
+    .feed_image_small{
+        align-self: center;
+        justify-self: center;
+        margin: 0px;
+    }
+    .feed_image_small:nth-of-type(2){
+        height: 270px;
+        align-self: flex-start;
+    }
+    .feed_image_small:last-of-type{
+        height:270px;
+        align-self: flex-end;
+    }
+    .feed{
+        max-width: 1440px;
+    }
+    .feed>.out_wrapper{
+        max-width: 1440px;
+        height: 565px;
+    }
+    .feed_about{
+        margin: 70px auto 0px;
+        text-indent: 25px;
+        font-size: 36px;
+        line-height: 50px;
+        max-width: 1140px;
+    }
+    .giftSet{
+        width: 100%;
+        max-width: 1440px;
+        height: 780px;
+    }
+    .giftSet_slider_wrapper{
+        height:450px;
+        box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.4);
+    }
+    .giftSet_outWrapper{
+        background-size: 100%;
+        height: 700px;
+        background-image: url(../../img/giftset_background_tablet.png);
+    }
+    .giftSet_slider_innerWrapper{
+        max-width: 600px;
+        width: 570px;
+        box-shadow: -500px -0.5px 0px 0px rgba(0,0,0,0.4), 500px -0.5px 0px 0px rgba(0,0,0,0.4);
+    }
+    .svg_arrow{
+        width: 100px;
+        top:    40%;
+    }
+    .active_button:hover{
+        width: 120px;
+    }
+    .svg_leftArrow{
+        left: 125px;
+    }
+    .svg_rightArrow{
+        right: 125px;
+    }
+    .giftSet_price{
+        font-size: 50px;
+        width: 250px;
+        text-align: center;
+    }
+    .buy_button{
+        width: 290px;
+        height: 65px;
+    }
+    .buy_button_link   {
+        font-size: 29px;
+    }
+    .giftSet_yellow_bird{
+        position: absolute;
+        display: block;
+        width: 275px;
+        bottom: -30px;
+        left: 55px;
+    }
+    .prices_orange_bird{
+    width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .orderSection{
+
+        max-width: 1140px;
+        height: 650px;
+    }
+    .orderSection_wrapper{
+        max-width: 1140px;
+        margin: 0px auto;
+        height: 610px;
+    }
+.orderSection_title{
+    width: 100%;
+}
+
+
+    .orderSection_list_item, .orderSection_subList_item{
+        font-size: 29px;
+    }
+    .orderSection_list_item{
+        margin-top: 55px;
+        max-width: 570px;
+    }
+    .orderSection_list{
+        margin-left: 35px;
+     
+
+    }
+    .input_text{
+        width: 440px;
+        height: 95px;
+        font-size:35px;
+    }
+    .input_textarea{
+        width: 440px;
+        height: 190px;
+        font-size: 35px;
+    }
+    .submit_button{
+        width: 290px;
+        height: 65px;
+        left: 185px;;
+        bottom:105px;
+        font-size: 30px;
+        line-height: 65px;
+    }
+
+
+
+
+
+
+    .form_label{
+        font-size: 29px;
+        line-height: 55px;
+        font-weight: bold;
+   
+    }
+    .orderForm{
+        height: 85%;
+        justify-content: flex-start;
+        flex: 2;
+        margin-left: 100px;
+    }
+.footer{
+    max-width: 1140px;
+    margin-top: 165px;
+}
+
+    .footer_logo{
+        width: 320px;
+    
+    }
+  
+    .footer_contacts{
+        font-size: 30px;
+    }
+    .footer_shadow{
+    }
+ 
+    .footer_link{
+        width: 70px;
+        height: 70px;
+    }
+    .footer_link_wrapper{
+        width: 400px;
+    }
+    .footer_contacts_wrapper{
+        width: 300px;
+    }
+    .footer_bird{
+        width: 450px;
+        top: -175px;
+        left: 50%;
+    }
+    }
+    

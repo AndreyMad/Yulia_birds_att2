@@ -217,9 +217,17 @@ color: #ffffff;
     text-align: center;
     display: block;
     margin: 30px auto;
+transition: 100ms;
+    box-shadow: 8px 12px 4px 0px rgba(0,0,0,0.3);
 
-    box-shadow: 3px 8px 4px 0px rgba(0,0,0,0.3)
-
+}
+.feeder_details:hover{
+   cursor: pointer;
+}
+.feeder_details:active{
+    box-shadow: 5px 6px 4px 0px rgba(0,0,0,0.3);
+    transform: translate(2px, 2px);
+    transition: 100ms;
 }
 .feeder_photo_bird{
     position: absolute;
@@ -246,7 +254,7 @@ color: #ffffff;
     left: 0px;
     bottom: 165px;
 }
-.feed_title, .giftset_title, .photogallery_title, .prices_title{
+.feed_title, .giftset_title, .photogallery_title, .prices_title, .orderSection_title{
     font-size: 21px;
     line-height: 40px;
     text-transform: uppercase;
@@ -254,6 +262,7 @@ color: #ffffff;
     font-weight: bold;
     font-family: 'Myriad Pro', sans-serif;
     color:#ffcc00;
+    background-color: #fff;
 }
 .out_wrapper{
     width: inherit;
@@ -329,7 +338,7 @@ color: #ffffff;
 }
 
 
-.svg_rigthArrow{
+.svg_rightArrow{
     top: 60%;
     right: 15px;
 }
@@ -514,20 +523,29 @@ transform: rotateZ(-35deg)
 }
 .photogallery_buttons_wrapper{
     position: relative;
-    width: 250px;
+    width: 150px;
     height: 50px;
-    margin: 0px auto;
+    margin: 10px auto;
 }
 .prices_table{
     width: 100%;
 }
-.orderSection{
+.prices_orange_bird{
+    display: none;
+}
+.orderSection_wrapper{
+    width: 100%;
     height: 205px;
-    background-color: #ffcc00;
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
     position: relative;
+}
+.orderSection{
+    height: 245px;
+    background-color: #ffcc00;
+    
 }
 .orderSection_list{
    flex: 2;
@@ -546,7 +564,7 @@ list-style: disc;
 }
 .orderForm{
     padding: 5px 0px 5px;
-    height: 100%;
+    height: 205px;
     display: flex;
     flex-wrap: wrap;
     flex: 1;
@@ -603,8 +621,10 @@ list-style: disc;
 .footer{
     height: 60px;
     margin: 60px auto 0px;
+
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .footer_shadow{
@@ -623,32 +643,37 @@ list-style: disc;
     transform: translateX(-23%);
 }
 .footer_logo{
-    width: 140px;
-    margin-left: 45px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+  
 }
-.footer_contact_wrapper{
-    /* margin-top: 15px; */
+
+.footer_link_wrapper{
+   width: 180px;
+    margin-bottom: 15px;
     display: flex;
-    align-items: flex-end;
-    width: 170px;
-   flex-direction: column;
-   height: 45px;
-   justify-content: space-between;
-}
-.footer_logo_wrapper{
-    width: 55px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .footer_contacts{
     font-size: 10px;
     text-decoration: none;
     color: #ffffff;
+    display: block;
 
 }
+.footer_contacts_wrapper{
+    display: flex;
+    margin-right: 10px;
+    height: 90%;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+ width: 120px;
+justify-content: flex-end;
+}
 .footer_link{
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 28px;
 }
 .footer_logo_icon{
     width: inherit;

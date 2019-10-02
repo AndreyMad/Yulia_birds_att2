@@ -1,6 +1,6 @@
 let giftSetSlides = document.querySelectorAll('.giftSet_slide');
 const leftButton = document.querySelector('.svg_leftArrow')
-const rightButton = document.querySelector('.svg_rigthArrow')
+const rightButton = document.querySelector('.svg_rightArrow')
 
 function nextSlide(){
     let activeSlide = document.querySelector('.gift_active');
