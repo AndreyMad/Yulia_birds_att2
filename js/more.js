@@ -44,16 +44,45 @@ const items = [
 function htmlCreate(event) {
   if (event.target.classList == "feeder_details") {
     const outWrapper = event.target.closest(".feeder_out_wrapper");
+    let closeButton = document.createElement('div');
+    closeButton.classList.add('close_button');
+    closeButton.textContent = 'X';
+    let modalOutwrapper = document.createElement('div')
+    modalOutwrapper.classList.add('modal_out_wrapper')
+
     let overlay = document.createElement("div");
     overlay.classList.add("overlay");
     let innerWrapper = document.createElement("div");
     innerWrapper.classList.add("modal_innerWrapper");
     let img =document.createElement('img');
-
-   
+    img.classList.add('modal_img')
+    img.src=outWrapper.dataset.src;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     outWrapper.prepend(overlay);
-    overlay.append(innerWrapper);
+    outWrapper.append(img)
+    overlay.append(modalOutwrapper);
+    modalOutwrapper.append(innerWrapper)
+    innerWrapper.append(img, closeButton)
+    closeButton.addEventListener('click', closeModal)
+
   }
 }
+
+function closeModal(){
+  let overlay = document.querySelector('.overlay')
+ overlay.remove()
+}
+
 
 window.addEventListener("click", htmlCreate);
