@@ -119,11 +119,7 @@
         font-size: 29px;
 
     }
-    .feeder_details:active{
-        box-shadow: 5px 6px 4px 0px rgba(0,0,0,0.3);
-        transform: translate(1.5px, 1.5px);
-        transition: 200ms;
-    }
+ 
 
 
 
@@ -336,8 +332,7 @@
     .footer_contacts{
         font-size: 30px;
     }
-    .footer_shadow{
-    }
+ 
  
     .footer_link{
         width: 70px;

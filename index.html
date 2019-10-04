@@ -241,13 +241,14 @@
      </li>
    </ol>
 
-   <form  action="https://formspree.io/xvjejwrx" method="POST" class="orderForm">
+   <form action="https://formspree.io/xvjejwrx" class="orderForm" method="POST">
    <label for="#phone_number" class="form_label">Номер телефона</label>
-   <input type="text" name="input_phone_number" id="phone_number" class="input_text">
-   <label for="#name" class="form_label">Ваше имя</label>
-   <input type="text" name="input_name" id="name" class="input_text">
+   
+   <input type="tel" name="input_phone_number" id="phone_number" minlength="10" class="input_text" pattern="\d*" title="Допускаются цифры 0-9" required>
+   <label for="#name" class="form_label" >Ваше имя</label>
+   <input type="text" name="input_name" id="name" minlength="3" class="input_text" required>
    <label for="#comment" class="form_label">Комментарий</label>
-   <textarea type="text" name="input_comment" id="comment" class="input_textarea"></textarea>
+   <textarea type="text"  minlength="20" name="input_comment" id="comment" class="input_textarea" required></textarea>
   
    <input type="submit" value="Купить" class="submit_button">
   </form>
@@ -271,8 +272,16 @@
   </div>
    
   </footer>
-  <!-- <script src="./form.php"></script> -->
+
+  <!-- <div class="root activeRoot">
+    <div class="shadowWrapper">
+
+    </div>
+  </div> -->
+
   <script src="./js/slider.js"></script>
   <script src="./js/slider_carousel.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/more.js"></script>
   </body>
 </html>
