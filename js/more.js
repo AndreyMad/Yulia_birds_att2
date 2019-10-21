@@ -17,8 +17,7 @@ const items = [
 </div>`,
     name: "feeder_house",
     imgSrc: "./img/yellow_house.jpg",
-    about: `Кормушка "Теремок" изготовлена из литого акрилового стекла производ-
-        ства Германии. Это кристально прозрачный материал с длительным сроком 
+    about: `Кормушка "Теремок" изготовлена из литого акрилового стекла производства Германии. Это кристально прозрачный материал с длительным сроком 
         эксплуатации. В кормушке установлена деревянная деталь для удобной по-
         садки птиц.`,
     volume: " 0,2 л. корма",
@@ -35,7 +34,7 @@ const items = [
   },
   {
     name: "feeder_photo",
-    about: `Кормушка "Теремок" изготовлена из литого акрилового стекла производ-
+    about: `.modal_sizeилового стекла производ-
         ства Германии. Это кристально прозрачный материал с длительным сроком 
         эксплуатации. В кормушке установлена деревянная деталь для удобной по-
         садки птиц.`,
@@ -71,16 +70,37 @@ function htmlCreate(event) {
     let innerWrapper = document.createElement("div");
     innerWrapper.classList.add("modal_innerWrapper");
     innerWrapper.innerHTML = item.template;
+    let modalTextContainer = document.createElement("div");
+    modalTextContainer.classList.add("modal_text_container");
 
-    // let img = document.createElement("img");
-    // img.classList.add("modal_img");
-    // img.src = outWrapper.dataset.src;
+    let about = document.createElement("span");
+    about.textContent = item.about;
+    about.classList.add("modal_about");
+    let sizeName = document.createElement("span");
+    sizeName.classList.add("size_name");
+    sizeName.textContent = "Размеры В*Ш*Г:";
 
+    let size = document.createElement("span");
+    size.classList.add("modal_size");
+    size.textContent = `${" "}${item.size}`;
+    let volumeName = document.createElement("span");
+    volumeName.classList.add("volume_name");
+    volumeName.textContent = "Вместительность:";
+
+    let volume = document.createElement("span");
+    volume.classList.add("modal_volume");
+    volume.textContent = ` ${item.volume}`;
+    let subscribe = document.createElement("span");
+    subscribe.classList.add("modal_subscribe");
+    subscribe.textContent = item.aboutText;
     outWrapper.prepend(overlay);
     // outWrapper.append(img);
     overlay.append(modalOutwrapper);
     modalOutwrapper.append(innerWrapper);
-
+    sizeName.append(size);
+    volumeName.append(volume);
+    modalTextContainer.append(about, sizeName, volumeName, subscribe);
+    innerWrapper.append(modalTextContainer);
     innerWrapper.append(closeButton);
     closeButton.addEventListener("click", closeModal);
     modalBtnActivate();
@@ -98,7 +118,7 @@ let modalButtons = document.querySelectorAll(".arrow");
 
 function modalBtnActivate() {
   let modalButtons = document.querySelectorAll(".arrow");
-  console.log(modalButtons);
+
   modalButtons.forEach(el => {
     el.addEventListener("click", modalSlider);
   });
