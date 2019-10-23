@@ -2,17 +2,30 @@ const items = [
   {
     template: ` <div class="modal_slider">
     <div class="modal_slider_container">
-        <img src="./img/feederHouse/1.jpg" alt="Yellow bird house " class="feeder_image active_slide">
-
-        <img src="./img/feederHouse/2.jpg" alt="Yellow bird house " class="feeder_image inactive_slide">
-        <img src="./img/feederHouse/3.jpg" alt="Yellow bird house " class="feeder_image inactive_slide">
-        <img src="./img/feederHouse/4.jpg" alt="Yellow bird house " class="feeder_image inactive_slide">
-        <img src="./img/feederHouse/5.jpg" alt="Yellow bird house " class="feeder_image inactive_slide">
-     
-       
+    
+    <picture class="feeder_image active_slide">
+      <source srcset="./img/feeder_flamingo/feeder1.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/1.jpg" alt="Yellow bird house " >
+    </picture>
+    <picture class="feeder_image inactive_slide">
+      <source srcset="./img/feeder_flamingo/feeder3.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/2.jpg" alt="Yellow bird house " >
+    </picture>    
+    <picture class="feeder_image inactive_slide">
+      <source srcset="./img/feeder_flamingo/feeder2.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/3.jpg" alt="Yellow bird house ">
+    </picture>
+    <picture class="feeder_image inactive_slide">
+      <source srcset="./img/feeder_flamingo/feeder4.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/4.jpg" alt="Yellow bird house " >
+    </picture>
+    <picture class="feeder_image inactive_slide">
+      <source srcset="./img/feeder_flamingo/feeder5.jpg"  media="(min-width: 760px)">
+      
+      <img src="./img/feederHouse/5.jpg" alt="Yellow bird house ">
+    </picture>
     </div>
     <a class="arrow arrow-left modal_inactive_arrow" title="Previous" id="arrow-left"></a>
-
     <a class="arrow arrow-right modal_active_arrow" title="Next" id="arrow-right"></a>
 </div>`,
     name: "feeder_house",
@@ -50,7 +63,46 @@ const items = [
     name: "feeder_teremok"
   },
   {
-    name: "feeder_flamingo"
+    name: "feeder_flamingo",
+    template: ` <div class="modal_slider">
+    <div class="modal_slider_container">
+    
+    <picture class="feeder_image active_slide">
+      <source srcset="./img/feeder_flamingo/feeder1.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/5.jpg" alt="Yellow bird house ">
+    </picture>
+    <picture class="feeder_image inactive_slide">
+    <source srcset="./img/feeder_flamingo/feeder2.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/feeder2_mobile.jpg" alt="Yellow bird house " >
+    </picture>    
+    <picture class="feeder_image inactive_slide">
+    <source srcset="./img/feeder_flamingo/feeder3.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/feeder3_mobile.jpg" alt="Yellow bird house " >
+    </picture>
+    <picture class="feeder_image inactive_slide">
+    <source srcset="./img/feeder_flamingo/feeder4.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/feeder4_mobile.jpg" alt="Yellow bird house " >
+    </picture>
+    <picture class="feeder_image inactive_slide">
+    <source srcset="./img/feeder_flamingo/feeder5.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/feeder5_mobile.jpg" alt="Yellow bird house " >
+    </picture>
+    <picture class="feeder_image inactive_slide">
+    <source srcset="./img/feeder_flamingo/feeder6.jpg"  media="(min-width: 760px)">
+    
+    <img src="./img/feeder_flamingo/feeder6_mobile.jpg" alt="Yellow bird house " >
+  </picture>
+  <picture class="feeder_image inactive_slide">
+  <source srcset="./img/feeder_flamingo/feeder7.jpg"  media="(min-width: 760px)">  
+  <img src="./img/feeder_flamingo/feeder7_mobile.jpg" alt="Yellow bird house " >
+</picture>
+    
+    
+    
+    </div>
+    <a class="arrow arrow-left modal_inactive_arrow" title="Previous" id="arrow-left"></a>
+    <a class="arrow arrow-right modal_active_arrow" title="Next" id="arrow-right"></a>
+</div>`
   }
 ];
 

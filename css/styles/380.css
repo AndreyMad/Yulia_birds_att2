@@ -185,6 +185,9 @@
 .feeder_image {
   width: inherit;
 }
+.feeder_image > img {
+  width: inherit;
+}
 .feeder_inner_wrapper {
   width: inherit;
 
