@@ -24,6 +24,9 @@
   justify-content: space-between;
   padding: 0px 10px;
 }
+.header_nav_item{
+  list-style: none;
+}
 
 .header_nav_link {
   text-decoration: none;
@@ -212,7 +215,7 @@
   color: #ffffff;
 }
 .feeder_details,
-.buy_button {
+.buy_button, .modal_buy_button{
   width: 175px;
   height: 38px;
   border-radius: 10px;
@@ -678,13 +681,4 @@
 }
 .giftSet_yellow_bird {
   display: none;
-}
-.overlay {
-  height: 1000px;
-  top: 0px;
-  left: 0px;
-  position: fixed;
-  background-color: #fff;
-  z-index: 5;
-  padding: 0px 0px 10px;
 }

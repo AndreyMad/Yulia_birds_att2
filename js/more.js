@@ -59,6 +59,17 @@ const items = [
   },
   {
     name: "feeder_photo",
+    template: ` <div class="modal_slider">
+    <div class="modal_slider_container">
+    
+    <picture class="feeder_image active_slide">
+      <source srcset="./img/photo.jpg"  media="(min-width: 760px)">
+      <img src="./img/photo_mobile.jpg" alt="Yellow bird house " >
+    </picture>
+    
+    </div>
+  
+</div>`,
     about: `Премиум кормушка, отлично подойдет на подарок!
     Комплектуется:
     - крафтовая упаковка с древесной стружкой
@@ -75,12 +86,34 @@ const items = [
   },
   {
     name: "feeder_lodgy",
+    template: ` <div class="modal_slider">
+    <div class="modal_slider_container">
+    
+    <picture class="feeder_image active_slide">
+      <source srcset="./img/feeder_lodgy.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_lodgy_mobile.jpg" alt="Yellow bird house " >
+    </picture>
+    
+    </div>
+  
+</div>`,
     about: `Кормушка для птиц "Лоджия" предназначена для кормления мелких птиц. Кормушка  изготовлена из акрилового стекла производства Германии. Это кристально прозрачный материал с длительным сроком эксплуатации. В кормушке установлена деревянная деталь для удобной посадки птиц.  `,
     volume: "0,3 л. корма",
     size: "110х180х70 мм.",
     aboutText: `Для крепления на стекло используются качественные, большие прозрачные присоски, хорошо держатся при любой температуре (проверено много раз, держатся всю зиму в мороз, снег, дождь). Но даже если вы беспокоитесь, что кормушка может отпасть и улететь, предусмотрена система "Якорь" (страховка), одна присоска крепится на окно внутри дома, от которой идет тонкая нить до кормушки. Кормушки снабжены инструкцией по эксплуатации. При правильном обращении имеют длительный  срок службы  и требуют минимального ухода. Если вы хотите рассматривать и фотографировать птиц без помех, то акриловые кормушки для вас!`
   },
   {
+    template: ` <div class="modal_slider">
+    <div class="modal_slider_container">
+    
+    <picture class="feeder_image active_slide">
+      <source srcset="./img/teremok.jpg"  media="(min-width: 760px)">
+      <img src="./img/teremok_mobile.jpg" alt="Yellow bird house " >
+    </picture>
+    
+    </div>
+  
+</div>`,
     name: "feeder_teremok",
     about: `Кормушка "Теремок" изготовлена из литого акрилового стекла производства Германии. Это кристально прозрачный материал с длительным сроком эксплуатации. В кормушке установлена деревянная деталь для удобной посадки птиц.`,
     volume: "0,2 л. корма",
@@ -100,7 +133,7 @@ const items = [
     
     <picture class="feeder_image active_slide">
       <source srcset="./img/feeder_flamingo/feeder1.jpg"  media="(min-width: 760px)">
-      <img src="./img/feederHouse/5.jpg" alt="Yellow bird house ">
+      <img src="./img/feeder_flamingo/feeder1_mobile.jpg" alt="Yellow bird house ">
     </picture>
     <picture class="feeder_image inactive_slide">
     <source srcset="./img/feeder_flamingo/feeder2.jpg"  media="(min-width: 760px)">
@@ -131,63 +164,82 @@ const items = [
     
     
     </div>
-    <a class="arrow arrow-left modal_inactive_arrow" title="Previous" id="arrow-left"></a>
-    <a class="arrow arrow-right modal_active_arrow" title="Next" id="arrow-right"></a>
+    <a class="arrow arrow-left modal_inactive_arrow" title="Previous" id="arrow-left" style="box-shadow:3px -3px white inset;;"></a>
+    <a class="arrow arrow-right modal_active_arrow" title="Next" id="arrow-right" style="box-shadow:3px -3px white inset;;"> </a>
 </div>`
+
   }
 ];
 
 function htmlCreate(event) {
-  if (event.target.classList == "feeder_details") {
-    const outWrapper = event.target.closest(".feeder_out_wrapper");
-    let item = items.find(el => el.name === outWrapper.dataset.name);
+  setTimeout(() => {
+    if (event.target.classList == "feeder_details") {
+      const outWrapper = event.target.closest(".feeder_out_wrapper");
+      let item = items.find(el => el.name === outWrapper.dataset.name);
 
-    let closeButton = document.createElement("div");
-    closeButton.classList.add("close_button");
-    closeButton.textContent = "X";
-    let modalOutwrapper = document.createElement("div");
-    modalOutwrapper.classList.add("modal_out_wrapper");
+      let closeButton = document.createElement("div");
+      closeButton.classList.add("close_button");
+      closeButton.textContent = "X";
+      let modalOutwrapper = document.createElement("div");
+      modalOutwrapper.classList.add("modal_out_wrapper");
 
-    let overlay = document.createElement("div");
-    overlay.classList.add("overlay");
-    let innerWrapper = document.createElement("div");
-    innerWrapper.classList.add("modal_innerWrapper");
-    innerWrapper.innerHTML = item.template;
-    let modalTextContainer = document.createElement("div");
-    modalTextContainer.classList.add("modal_text_container");
+      let overlay = document.createElement("div");
+      overlay.classList.add("overlay");
+      let innerWrapper = document.createElement("div");
+      innerWrapper.classList.add("modal_innerWrapper");
+      innerWrapper.innerHTML = item.template;
+      let modalTextContainer = document.createElement("div");
+      modalTextContainer.classList.add("modal_text_container");
 
-    let about = document.createElement("span");
-    about.textContent = item.about;
-    about.classList.add("modal_about");
-    let sizeName = document.createElement("span");
-    sizeName.classList.add("size_name");
-    sizeName.textContent = "Размеры В*Ш*Г:";
+      let about = document.createElement("span");
+      about.textContent = item.about;
+      about.classList.add("modal_about");
+      let sizeName = document.createElement("span");
+      sizeName.classList.add("size_name");
+      sizeName.textContent = "Размеры В*Ш*Г:";
 
-    let size = document.createElement("span");
-    size.classList.add("modal_size");
-    size.textContent = `${" "}${item.size}`;
-    let volumeName = document.createElement("span");
-    volumeName.classList.add("volume_name");
-    volumeName.textContent = "Вместительность:";
+      let size = document.createElement("span");
+      size.classList.add("modal_size");
+      size.textContent = `${" "}${item.size}`;
+      let volumeName = document.createElement("span");
+      volumeName.classList.add("volume_name");
+      volumeName.textContent = "Вместительность:";
+      let modalBuyButton = document.createElement('button')
+      modalBuyButton.classList.add('buy_button')
+      let modalBuyLink = document.createElement('a');
+      modalBuyLink.classList.add('buy_button_link');
+      modalBuyLink.textContent = 'Купить';
+      modalBuyLink.href = '#order_form'
 
-    let volume = document.createElement("span");
-    volume.classList.add("modal_volume");
-    volume.textContent = ` ${item.volume}`;
-    let subscribe = document.createElement("span");
-    subscribe.classList.add("modal_subscribe");
-    subscribe.textContent = item.aboutText;
-    outWrapper.prepend(overlay);
-    // outWrapper.append(img);
-    overlay.append(modalOutwrapper);
-    modalOutwrapper.append(innerWrapper);
-    sizeName.append(size);
-    volumeName.append(volume);
-    modalTextContainer.append(about, sizeName, volumeName, subscribe);
-    innerWrapper.append(modalTextContainer);
-    innerWrapper.append(closeButton);
-    closeButton.addEventListener("click", closeModal);
-    modalBtnActivate();
-  }
+
+
+
+
+      let volume = document.createElement("span");
+      volume.classList.add("modal_volume");
+      volume.textContent = ` ${item.volume}`;
+      let subscribe = document.createElement("span");
+      subscribe.classList.add("modal_subscribe");
+      subscribe.textContent = item.aboutText;
+      outWrapper.prepend(overlay);
+      // outWrapper.append(img);
+      overlay.append(modalOutwrapper);
+
+      modalBuyButton.append(modalBuyLink)
+
+      modalOutwrapper.append(innerWrapper);
+      sizeName.append(size);
+      volumeName.append(volume);
+      modalTextContainer.append(about, sizeName, volumeName, subscribe, modalBuyButton);
+      modalOutwrapper.append(modalTextContainer);
+      innerWrapper.append(closeButton);
+      closeButton.addEventListener("click", closeModal);
+      modalBtnActivate();
+      modalBuyLink.addEventListener('click', closeModal)
+
+    }
+  }, 500);
+
 }
 
 function closeModal() {
