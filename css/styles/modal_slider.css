@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   height: 280px;
   max-width: 440px;
   margin: 0px auto;
@@ -75,6 +75,7 @@
   background-size: 100% auto;
   max-height: 320px;
   width: 100vw;
+  overflow: auto;
 }
 .modal_innerWrapper {
   max-width: 600px;
@@ -84,6 +85,7 @@
   display: block;
   margin: 0px auto;
   z-index: 6;
+  overflow: auto;
 }
 .modal_img {
   height: auto;
@@ -111,6 +113,7 @@
 
 .modal_text_container {
   padding: 15px 10px;
+  background-color: rgba(256, 256, 256, 0.3);
 }
 .size_name,
 .volume_name {
