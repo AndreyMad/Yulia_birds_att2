@@ -73,7 +73,7 @@
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  max-height: 320px;
+  height: 100vh;
   width: 100vw;
   overflow: auto;
 }
