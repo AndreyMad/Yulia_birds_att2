@@ -1,0 +1,129 @@
+.modal_slider {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+  max-width: 440px;
+  margin: 0px auto;
+}
+.inactive_slide,
+.inactive_slide > img {
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+.active_slide,
+.active_slide > img {
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  max-width: inherit;
+  position: absolute;
+}
+.modal_slider_container {
+  width: 100%;
+  max-height: inherit;
+  height: inherit;
+  position: relative;
+  overflow: hidden;
+}
+.arrow {
+  z-index: 100;
+  position: absolute;
+  display: inline;
+  padding: 25px; /* Arrow size */
+  box-shadow: 3px -3px 0 1px black inset;
+  -webkit-box-shadow: 3px -3px black inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  top: 70%;
+}
+.arrow-left {
+  left: 10px;
+}
+.arrow-right {
+  right: 10px;
+}
+
+.modal_active_arrow:hover {
+  box-shadow: 3px -3px 0 2px black inset;
+}
+
+.arrow-right {
+  transform: rotate(225deg);
+}
+
+.arrow-left {
+  transform: rotate(45deg);
+}
+.modal_inactive_arrow {
+  opacity: 0.2;
+}
+
+.modal_out_wrapper {
+  background-image: url(../../img/modal_background.jpg);
+  padding-top: 20px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  max-height: 320px;
+  width: 100vw;
+}
+.modal_innerWrapper {
+  max-width: 600px;
+  max-height: 100%;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  z-index: 6;
+}
+.modal_img {
+  height: auto;
+  max-width: 440px;
+}
+.close_button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  position: absolute;
+  z-index: 7;
+  top: 5px;
+  right: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 30px;
+}
+.modal_about,
+.modal_subscribe {
+  font-size: 18px;
+  margin: 10px auto;
+  display: block;
+}
+
+.modal_text_container {
+  padding: 15px 10px;
+}
+.size_name,
+.volume_name {
+  font-size: 1.2em;
+  color: red;
+  display: block;
+}
+
+.modal_size,
+.modal_volume {
+  font-size: 1.2rem;
+  display: inline-block;
+  width: auto;
+  color: #000000;
+  margin-left: 5px;
+}
