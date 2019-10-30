@@ -226,7 +226,7 @@
               d="M257.778 0C115.641 0 0 115.641 0 257.778s115.641 257.778 257.778 257.778 257.778-115.641 257.778-257.778S399.914 0 257.778 0zm16.111 354.445V290h-145v-64.444h145v-64.444l112.778 96.667z" />
           </svg>
         </div>
-        <span class="giftSet_price">500 грн</span>
+        <!-- <span class="giftSet_price">500 грн</span> -->
         <button class="buy_button"><a class="buy_button_link" href="#order_form">Купить</a></button>
         <img src="./img/giftset_yellow_bird.png" alt="" class="giftSet_yellow_bird">
       </div>
@@ -251,9 +251,20 @@
       </div>
       </div>
   </section> -->
-  <section class="video_section">
-    <video src="./img/video.MOV" controls></video>
-  </section>
+    <section class="video_section">
+      <h2 class="video_section_title">Видео</h2>
+      <button class="video_play_button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58">
+          <circle cx="29" cy="29" r="29" fill="#ebba16" />
+          <g fill="#fff">
+            <path d="M44 29L22 44V14z" />
+            <path
+              d="M22 45a.999.999 0 01-1-1V14a.999.999 0 011.564-.826l22 15a1.001 1.001 0 01-.001 1.652l-22 15A1.002 1.002 0 0122 45zm1-29.107v26.215L42.225 29 23 15.893z" />
+          </g>
+        </svg>
+      </button>
+      <video src="./img/video.mp4" id="video"></video>
+    </section>
     <section class="prices">
       <h2 class="prices_title">Наши цены</h2>
       <img src="./img/prices_orange_bird.png" alt="" class="prices_orange_bird">
@@ -317,11 +328,12 @@
 
     </div>
   </div> -->
-    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
     <script src="./js/slider.js"></script>
-    <script src="./js/slider_carousel.js"></script>
-    <script src="./js/form.js"></script>
+
+
     <script src="./js/more.js"></script>
+    <script src="./js/video.js"></script>
 
   </body>
 

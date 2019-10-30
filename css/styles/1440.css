@@ -4,6 +4,14 @@
         max-width: 1140px;
       
     }
+    .video_section{
+        max-width: 570px;
+        max-height: 570px;
+    }
+
+    .video_section>video{
+        max-height: 570px;
+    }
     .feeder_out_wrapper{
         margin-top: 100px;
     }
@@ -74,7 +82,7 @@
         width: 230px;
         left: 120px;
     }
-    .feeder_types_title, .orderSection_title, .feed_title, .giftset_title, .photogallery_title, .prices_title{
+    .feeder_types_title, .video_section_title, .orderSection_title, .feed_title, .giftset_title, .photogallery_title, .prices_title{
         font-size: 50px;
         line-height: 80px;
     }

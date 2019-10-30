@@ -4,6 +4,14 @@
     width: 100%;
     max-width: 760px;
 }
+.video_section{
+    max-width: 520px;
+    max-height: 500px;
+    margin-bottom: 100px;
+}
+.video_section>video{
+    max-height: 520px;
+}
 .header{
     height: 60px;
     padding-left: 155px;
@@ -82,7 +90,7 @@ margin-left: 130px;
     width: 180px;
     left: 80px;
 }
-.feeder_types_title, .orderSection_title, .feed_title, .giftset_title, .photogallery_title, .prices_title{
+.feeder_types_title, .video_section_title, .orderSection_title, .feed_title, .giftset_title, .photogallery_title, .prices_title{
     font-size: 29px;
 }
 .feeder_types_text, .feed_inner_title{
