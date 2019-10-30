@@ -24,7 +24,7 @@
   justify-content: space-between;
   padding: 0px 10px;
 }
-.header_nav_item{
+.header_nav_item {
   list-style: none;
 }
 
@@ -215,7 +215,8 @@
   color: #ffffff;
 }
 .feeder_details,
-.buy_button, .modal_buy_button{
+.buy_button,
+.modal_buy_button {
   width: 175px;
   height: 38px;
   border-radius: 10px;
@@ -681,4 +682,13 @@
 }
 .giftSet_yellow_bird {
   display: none;
+}
+
+.video_section {
+  width: 100%;
+  height: 200px;
+}
+.video_section > video {
+  width: 100%;
+  height: 100%;
 }
