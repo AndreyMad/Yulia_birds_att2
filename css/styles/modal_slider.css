@@ -13,7 +13,7 @@
   width: 100%;
   height: auto;
   position: relative;
-background-color: rgba(256,256,256,0.9);
+  background-color: rgba(256, 256, 256, 0.9);
   height: 310px;
   max-width: 440px;
   margin: 0px auto;
@@ -21,7 +21,6 @@ background-color: rgba(256,256,256,0.9);
 }
 .inactive_slide,
 .inactive_slide > img {
-
   transition: 1s;
   width: 100%;
   height: 100%;
@@ -81,9 +80,8 @@ background-color: rgba(256,256,256,0.9);
 }
 
 .modal_out_wrapper {
-
-overflow-anchor: ;
- overflow: auto;
+  overflow-anchor: ;
+  overflow: auto;
   /* background-image: url(../../img/modal_background.jpg);
   background-position: 50% 0%;
   background-repeat: no-repeat;
@@ -97,8 +95,6 @@ overflow-anchor: ;
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: 120% auto;
-
-
 
   max-width: 750px;
   max-height: 100%;
@@ -132,6 +128,7 @@ overflow-anchor: ;
 .modal_subscribe {
   font-size: 18px;
   margin: 10px auto;
+  text-indent: 20px;
   display: block;
 }
 

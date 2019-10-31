@@ -4,25 +4,25 @@ const items = [
     <div class="modal_slider_container">
     
     <picture class="feeder_image active_slide">
-      <source srcset="./img/feeder_flamingo/feeder1.jpg"  media="(min-width: 760px)">
-      <img src="./img/feederHouse/1.jpg" alt="Yellow bird house " >
+      <source srcset="./img/feederHouse/1.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/1_mobile.jpg" alt="Yellow bird house " >
     </picture>
     <picture class="feeder_image inactive_slide">
-      <source srcset="./img/feeder_flamingo/feeder3.jpg"  media="(min-width: 760px)">
-      <img src="./img/feederHouse/2.jpg" alt="Yellow bird house " >
+      <source srcset="./img/feederHouse/2.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/2_mobile.jpg" alt="Yellow bird house " >
     </picture>    
     <picture class="feeder_image inactive_slide">
-      <source srcset="./img/feeder_flamingo/feeder2.jpg"  media="(min-width: 760px)">
-      <img src="./img/feederHouse/3.jpg" alt="Yellow bird house ">
+      <source srcset="./img/feederHouse/3.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/3_mobile.jpg" alt="Yellow bird house ">
     </picture>
     <picture class="feeder_image inactive_slide">
-      <source srcset="./img/feeder_flamingo/feeder4.jpg"  media="(min-width: 760px)">
-      <img src="./img/feederHouse/4.jpg" alt="Yellow bird house " >
+      <source srcset="./img/feederHouse/4.jpg"  media="(min-width: 760px)">
+      <img src="./img/feederHouse/4_mobile.jpg" alt="Yellow bird house " >
     </picture>
     <picture class="feeder_image inactive_slide">
-      <source srcset="./img/feeder_flamingo/feeder5.jpg"  media="(min-width: 760px)">
+      <source srcset="./img/feederHouse/5.jpg"  media="(min-width: 760px)">
       
-      <img src="./img/feederHouse/5.jpg" alt="Yellow bird house ">
+      <img src="./img/feederHouse/5_mobile.jpg" alt="Yellow bird house ">
     </picture>
     </div>
     <a class="arrow arrow-left modal_inactive_arrow" title="Previous" id="arrow-left"></a>
@@ -41,18 +41,6 @@ const items = [
     
     одна присоска крепится на окно внутри дома, от которой идет тонкая нить до кормушки.
     
-    Кормушки снабжены инструкцией по эксплуатации. При правильном обращении имеют длительный  срок службы.`
-  },
-  {
-    name: "feeder_house",
-    imgSrc: "./img/yellow_house.jpg",
-    about: `Уникальный дизайн не оставит равнодушными абсолютно никого. А продуманная конструкция, с максимально открытой стороной к окну в ваш дом, позволит рассмотреть всех птиц.`,
-    volume: " 0,5 л. корма",
-    size: "150х370х50 мм.",
-    aboutText: `Кормушки выполнены из качественного пластика производства Израиль, не подвергаются внешнему влиянию (не промокают, не гниют, не теряют внешний вид).
-    Для крепления на стекло используются качественные, большие прозрачные присоски, хорошо держатся при любой температуре (проверено много раз, 
-    держатся всю зиму в мороз, снег, дождь). Но даже если вы беспокоитесь, что кормушка может отпасть и улететь, предусмотрена система якорь (страховка), 
-    одна присоска крепится на окно внутри дома, от которой идет тонкая нить до кормушки.
     Кормушки снабжены инструкцией по эксплуатации. При правильном обращении имеют длительный  срок службы.`
   },
   {
@@ -136,33 +124,33 @@ const items = [
     <div class="modal_slider_container">
     
     <picture class="feeder_image active_slide">
-      <source srcset="./img/feeder_flamingo/feeder1.jpg"  media="(min-width: 760px)">
-      <img src="./img/feeder_flamingo/feeder1_mobile.jpg" alt="Yellow bird house ">
+      <source srcset="./img/feeder_flamingo/flamingo1.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/flamingo1_mobile.jpg" alt="Yellow bird house ">
     </picture>
     <picture class="feeder_image inactive_slide">
-    <source srcset="./img/feeder_flamingo/feeder2.jpg"  media="(min-width: 760px)">
-      <img src="./img/feeder_flamingo/feeder2_mobile.jpg" alt="Yellow bird house " >
+    <source srcset="./img/feeder_flamingo/flamingo2.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/flamingo2_mobile.jpg" alt="Yellow bird house " >
     </picture>    
     <picture class="feeder_image inactive_slide">
-    <source srcset="./img/feeder_flamingo/feeder3.jpg"  media="(min-width: 760px)">
-      <img src="./img/feeder_flamingo/feeder3_mobile.jpg" alt="Yellow bird house " >
+    <source srcset="./img/feeder_flamingo/flamingo3.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/flamingo3_mobile.jpg" alt="Yellow bird house " >
     </picture>
     <picture class="feeder_image inactive_slide">
-    <source srcset="./img/feeder_flamingo/feeder4.jpg"  media="(min-width: 760px)">
-      <img src="./img/feeder_flamingo/feeder4_mobile.jpg" alt="Yellow bird house " >
+    <source srcset="./img/feeder_flamingo/flamingo4.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/flamingo4_mobile.jpg" alt="Yellow bird house " >
     </picture>
     <picture class="feeder_image inactive_slide">
-    <source srcset="./img/feeder_flamingo/feeder5.jpg"  media="(min-width: 760px)">
-      <img src="./img/feeder_flamingo/feeder5_mobile.jpg" alt="Yellow bird house " >
+    <source srcset="./img/feeder_flamingo/flamingo5.jpg"  media="(min-width: 760px)">
+      <img src="./img/feeder_flamingo/flamingo5_mobile.jpg" alt="Yellow bird house " >
     </picture>
     <picture class="feeder_image inactive_slide">
-    <source srcset="./img/feeder_flamingo/feeder6.jpg"  media="(min-width: 760px)">
+    <source srcset="./img/feeder_flamingo/flamingo6.jpg"  media="(min-width: 760px)">
     
-    <img src="./img/feeder_flamingo/feeder6_mobile.jpg" alt="Yellow bird house " >
+    <img src="./img/feeder_flamingo/flamingo6_mobile.jpg" alt="Yellow bird house " >
   </picture>
   <picture class="feeder_image inactive_slide">
-  <source srcset="./img/feeder_flamingo/feeder7.jpg"  media="(min-width: 760px)">  
-  <img src="./img/feeder_flamingo/feeder7_mobile.jpg" alt="Yellow bird house " >
+  <source srcset="./img/feeder_flamingo/flamingo7.jpg"  media="(min-width: 760px)">  
+  <img src="./img/feeder_flamingo/flamingo7_mobile.jpg" alt="Yellow bird house " >
 </picture>
     
     
@@ -171,7 +159,6 @@ const items = [
     <a class="arrow arrow-left modal_inactive_arrow" title="Previous" id="arrow-left" style="box-shadow:3px -3px white inset;;"></a>
     <a class="arrow arrow-right modal_active_arrow" title="Next" id="arrow-right" style="box-shadow:3px -3px white inset;;"> </a>
 </div>`
-
   }
 ];
 
@@ -208,16 +195,12 @@ function htmlCreate(event) {
       let volumeName = document.createElement("span");
       volumeName.classList.add("volume_name");
       volumeName.textContent = "Вместительность:";
-      let modalBuyButton = document.createElement('button')
-      modalBuyButton.classList.add('buy_button')
-      let modalBuyLink = document.createElement('a');
-      modalBuyLink.classList.add('buy_button_link');
-      modalBuyLink.textContent = 'Купить';
-      modalBuyLink.href = '#order_form'
-
-
-
-
+      let modalBuyButton = document.createElement("button");
+      modalBuyButton.classList.add("buy_button");
+      let modalBuyLink = document.createElement("a");
+      modalBuyLink.classList.add("buy_button_link");
+      modalBuyLink.textContent = "Купить";
+      modalBuyLink.href = "#order_form";
 
       let volume = document.createElement("span");
       volume.classList.add("modal_volume");
@@ -229,21 +212,25 @@ function htmlCreate(event) {
       // outWrapper.append(img);
       overlay.append(modalOutwrapper);
 
-      modalBuyButton.append(modalBuyLink)
+      modalBuyButton.append(modalBuyLink);
 
       modalOutwrapper.append(innerWrapper);
       sizeName.append(size);
       volumeName.append(volume);
-      modalTextContainer.append(about, sizeName, volumeName, subscribe, modalBuyButton);
+      modalTextContainer.append(
+        about,
+        sizeName,
+        volumeName,
+        subscribe,
+        modalBuyButton
+      );
       modalOutwrapper.append(modalTextContainer);
       innerWrapper.append(closeButton);
       closeButton.addEventListener("click", closeModal);
       modalBtnActivate();
-      modalBuyLink.addEventListener('click', closeModal)
-
+      modalBuyLink.addEventListener("click", closeModal);
     }
   }, 500);
-
 }
 
 function closeModal() {
