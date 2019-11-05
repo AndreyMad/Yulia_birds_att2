@@ -49,7 +49,7 @@ const items = [
     <div class="modal_slider_container">
     
     <picture class="feeder_image active_slide">
-      <source srcset="./img/photo.jpg"  media="(min-width: 760px)">
+      <source srcset="./img/feeder_photo.jpg"  media="(min-width: 760px)">
       <img src="./img/photo_mobile.jpg" alt="Yellow bird house " >
     </picture>
     
@@ -93,7 +93,7 @@ const items = [
     <div class="modal_slider_container">
     
     <picture class="feeder_image active_slide">
-      <source srcset="./img/teremok.jpg"  media="(min-width: 760px)">
+      <source srcset="./img/feeder_teremok.jpg"  media="(min-width: 760px)">
       <img src="./img/teremok_mobile.jpg" alt="Yellow bird house " >
     </picture>
     
