@@ -356,4 +356,15 @@
     top: -125px;
     left: 30%;
   }
+  .prices_title::before {
+    height: 25px;
+    top: 18px;
+    left: -20px;
+  }
+  .table_body {
+    font-size: 18px;
+  }
+  .table_head {
+    font-size: 18px;
+  }
 }
