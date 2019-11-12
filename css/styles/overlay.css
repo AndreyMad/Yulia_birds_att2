@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.overlay{
+    width: 100vw;
+    height: 1000px;
+   background-color: rgba(46, 49, 49, 0.2)
+  
+}
+.overlay_wrapper{
+    width: 80%;
+    max-width: 440px;
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+    background-color: #ffcc00;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.overlay_button{
+    width: 100px;
+    height: 25px;
+    display: block;
+    margin: 10px auto 15px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to top, #ffcd04, #fffd95);
+    font-size: 13px;
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 8px 4px 0px rgba(0, 0, 0, 0.3);
+
+}
+.overlay_button>a{
+  
+    text-decoration: none;
+    color: #000000;
+    outline: none;
+}
+.overlay_title{
+    margin: 15px 0px 0px;
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: bold;
+}
+.overlay_span{
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: normal;
+}
+.overlay_bird{
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: -120px;
+    left: 0px;
+}
+
+@media (min-width: 760px) {
+    .overlay_wrapper{
+        top: 50%;
+        height: 250px;
+        max-width: 560px;
+    }
+    .overlay_title{
+        margin-top: 30px;
+     font-size: 28px;
+    }
+    .overlay_span{
+        font-size: 25px;
+        display: block;
+        margin: 25px 15px;
+    }
+    .overlay_button{
+        width: 140px;
+        height: 35px;
+        font-size: 17px;
+    }
+}
+@media (min-width: 1440px) {
+    .overlay_wrapper{
+        top: 50%;
+        height: 450px;
+        max-width: 760px;
+    }
+    .overlay_title{
+        margin-top: 60px;
+        font-size: 50px;
+    }
+    .overlay_span{
+        font-size: 40px;
+        display: block;
+        margin: 60px 15px;
+    }
+    .overlay_button{
+        width: 235px;
+    height: 48px;
+    font-size: 30px;
+    }
+}
